@@ -197,5 +197,8 @@ SELECT DEPARTMENT, SUM(SALARY) FROM WORKER GROUP BY DEPARTMENT;
 #50. Write an SQL query to fetch the names of workers who earn the highest salary.
 SELECT FIRST_NAME, SALARY FROM WORKER WHERE SALARY IN (SELECT MAX(SALARY) FROM WORKER);
 
+#51. Write an SQL Query to create a cummulative or running totlal of the salary colunm from workers table.
+SELECT *, SUM(SALARY) OVER ( ORDER BY WORKER_ID ) AS Running_Sal FROM WORKER;
+
 SELECT * FROM WORKER
 
