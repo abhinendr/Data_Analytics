@@ -58,3 +58,18 @@ INSERT INTO Title
  (006, 'Lead', '2016-06-11 00:00:00'),
  (003, 'Lead', '2016-06-11 00:00:00');
 
+
+#Adding more values to Table
+
+INSERT INTO Worker 
+	(WORKER_ID, FIRST_NAME, LAST_NAME, SALARY, JOINING_DATE, DEPARTMENT) VALUES
+		(009, 'Deepika', 'Chaudahr', 90000, '14-03-20 09.00.00', 'HR'),
+		(010, 'Kiara', 'Singh', 700000, '14-05-11 09.00.00', 'IT'),
+		(011, 'Rohan', 'Rahane', 350000, '14-04-20 09.00.00', 'IT'),
+		(012, 'Gurudutt', 'Sharma', 450000, '14-04-20 09.00.00', 'Admin'),
+		(013, 'Pradyumna', 'Dangi', NULL, '14-02-11 09.00.00', 'HR'),
+		(014, 'Swati', 'Mishra', 150000, '14-07-11 09.00.00', 'Account'),
+		(015, 'Mansil', 'Devrani', 85000, '14-08-20 09.00.00', 'IT'),
+		(016, 'Abhinendr', 'Sharma', 650000, '14-07-11 09.00.00', 'Account');
+        
+        commit;
