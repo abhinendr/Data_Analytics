@@ -311,3 +311,12 @@ SELECT WORKER_ID, SALARY FROM WORKER WHERE DEPARTMENT = 'Admin';
 SELECT * FROM table_sal;
 
 SHOW CREATE VIEW table_sal;
+
+#65. Write an SQL Query to replace 'Amitabh' with 'Amy'
+
+SELECT REPLACE(FIRST_NAME,'Amitabh','Ami') FROM WORKER WHERE FIRST_NAME LIKE '%Amitabh%';
+
+#66. Write an SQL Query to CAST SALARY into INT
+
+SELECT CAST(SALARY AS unsigned) AS Int_Salary FROM WORKER; 
+SELECT CONVERT("2017-08-29", DATE);
